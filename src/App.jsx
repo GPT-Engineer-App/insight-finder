@@ -61,7 +61,13 @@ function Chat() {
     <div>
       <h1 className="text-2xl font-bold">Real Estate Chatbot</h1>
       <p className="mt-4">Ask any questions about real estate.</p>
-      {/* Chat interface implementation goes here */}
+      <div className="flex flex-col h-full">
+        <div className="flex-1 overflow-y-auto p-4 bg-gray-700">{}</div>
+        <div className="p-4 bg-gray-900">
+          <input type="text" placeholder="Type your message..." className="w-full p-2 rounded bg-gray-800 text-white placeholder-gray-400" />
+          <button className="p-2 ml-2 bg-blue-500 text-white rounded">Send</button>
+        </div>
+      </div>
     </div>
   );
 }
